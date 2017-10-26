@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marg_size">10dp</dimen>
+    <dimen name="font_size">20sp</dimen>
+
+    <!-- search_data_item.xml -->
+    <dimen name="search_data_marg">10dp</dimen>
+    <dimen name="search_data_padd">10dp</dimen>
+    <dimen name="search_data_font">16sp</dimen>
+
+    <!-- search_result_item.xml -->
+    <dimen name="app_icon_size">40dp</dimen>
+    <dimen name="app_icon_marg">10dp</dimen>
+    <dimen name="app_name_font">16sp</dimen>
+    <dimen name="app_pack_font">14sp</dimen>
+
+</resources>

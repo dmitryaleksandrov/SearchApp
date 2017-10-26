@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="appData"
+            type="com.fsecure.homework.searchapp.data.ApplicationData" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/app_icon"
+            android:layout_width="@dimen/app_icon_size"
+            android:layout_height="@dimen/app_icon_size"
+            android:layout_margin="@dimen/app_icon_marg"
+            android:src="@{appData.icon}" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/app_label"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="middle"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="@{appData.label}"
+                android:textSize="@dimen/app_name_font" />
+
+            <TextView
+                android:id="@+id/app_pack"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="middle"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="@{appData.package}"
+                android:textSize="@dimen/app_pack_font" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

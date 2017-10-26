@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search_btn_title">Hae</string>
+    <string name="search_txt_hint">Anna sovelluksen nimi tähän</string>
+    <string name="cancel_btn_title">Peruuttaa</string>
+    <string name="empty_result">Sovellusta ei löytynyt. Anteeksi :)</string>
+</resources>

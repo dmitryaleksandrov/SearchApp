@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.fsecure.homework.searchapp"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled true
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+        exclude group: 'com.google.code.findbugs'
+    })
+
+    compile group: 'com.android.support', name: 'support-v4', version: libVersions.supportLibVersion
+    compile group: 'com.android.support', name: 'appcompat-v7', version: libVersions.supportLibVersion
+    compile group: 'com.android.support', name: 'recyclerview-v7', version: libVersions.supportLibVersion
+
+    compile group: 'android.arch.lifecycle', name: 'extensions', version: libVersions.archLifecycleVersion
+    annotationProcessor group: 'android.arch.lifecycle', name: 'compiler', version: libVersions.archLifecycleVersion
+
+    compile group: 'com.google.dagger', name: 'dagger', version: libVersions.daggerVersion
+    annotationProcessor group: 'com.google.dagger', name: 'dagger-compiler', version: libVersions.daggerVersion
+
+    compile group: 'android.arch.persistence.room', name: 'runtime', version: libVersions.roomLibVersion
+    annotationProcessor group: 'android.arch.persistence.room', name: 'compiler', version: libVersions.roomLibVersion
+
+    compile group: 'com.google.dagger', name: 'dagger-android-support', version: libVersions.daggerVersion
+    annotationProcessor group: 'com.google.dagger', name: 'dagger-android-processor', version: libVersions.daggerVersion
+
+    testCompile group: 'junit', name: 'junit', version: libVersions.junitVersion
+    testCompile group: 'org.mockito', name: 'mockito-core', version: libVersions.mockitoVersion
+}
+

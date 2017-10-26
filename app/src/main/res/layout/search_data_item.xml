@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.fsecure.homework.searchapp.data.SearchQueryData" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marg_size"
+        android:background="@color/searh_data_item_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/search_data_padd">
+
+        <TextView
+            android:id="@+id/search_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@{data.searchText}"
+            android:textSize="@dimen/search_data_font" />
+
+    </LinearLayout>
+
+
+</layout>

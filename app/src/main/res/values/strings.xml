@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SearchApp</string>
+
+    <string name="search_btn_title">Search</string>
+    <string name="search_txt_hint">Enter app name here</string>
+    <string name="cancel_btn_title">Cancel</string>
+
+    <string name="empty_result">No app found. Sorry :)</string>
+
+</resources>
